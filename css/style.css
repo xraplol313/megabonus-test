@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+h1,
+h3,
+p,
+body {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+body {
+  font-family: Inter, sans-serif;
+}
+
+.main {
+  min-height: 824px;
+  background: #edf2fa;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.main__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+}
+
+.main__descr {
+  flex: 1;
+}
+
+.main__items {
+  flex: 2;
+}
+
+.main__descr-title {
+  color: #1f1f1f;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.main__descr-text {
+  position: relative;
+  padding-left: 26px;
+  color: #6f7685;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 24px;
+  max-width: 373px;
+}
+
+.main__descr-text::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: url(../images/star.svg) no-repeat center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main__items-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 844px;
+}
+
+.main__item {
+  border-radius: 44px;
+}
+
+.main__item-wrapper {
+  padding: 32px 0 0 40px;
+}
+
+.main__item .main__item-text {
+  padding-top: 16px;
+}
+
+.main__items-wrapper > *:not(:nth-last-child(1)) {
+  height: 248px;
+}
+
+.main__items-wrapper > :first-child {
+  background: #fff;
+  flex-basis: 66.66%;
+  max-width: 519px;
+}
+
+.main__items-wrapper > :first-child .main__item-title {
+  color: #1f1f1f;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+  max-width: 439px;
+}
+
+.main__items-wrapper > :first-child .main__item-text {
+  color: #1f1f1f;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-style: normal;
+  max-width: 412px;
+}
+
+.main__items-wrapper > :nth-child(2) {
+  background: #354b7e;
+  max-width: 302px;
+  width: 100%;
+}
+
+.main__items-wrapper > :nth-child(2) .main__item-title {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  max-width: 224px;
+}
+
+.main__items-wrapper > :nth-child(2) .main__item-text {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 222px;
+}
+
+.main__items-wrapper > :nth-child(3) .main__item-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.main__items-wrapper > :nth-child(3) {
+  position: relative;
+  background: rgb(10, 10, 10);
+  max-width: 302px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main__items-wrapper > :nth-child(3)::after {
+  position: absolute;
+  left: calc(100% - 250px);
+  top: calc(100% - 250px);
+  content: "";
+  background: rgb(10, 10, 10);
+  background: radial-gradient(
+    circle,
+    rgb(170 80 91) 11%,
+    rgb(54 87 160) 34%,
+    rgba(0, 0, 0, 1) 68%
+  );
+  width: 500px;
+  height: 500px;
+  border-radius: 0;
+  z-index: 1;
+}
+
+.main__items-wrapper > :nth-child(3) .main__item-title {
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  max-width: 224px;
+}
+
+.main__items-wrapper > :nth-child(3) .main__item-text {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 194px;
+}
+
+.main__items-wrapper > :nth-child(4) {
+  background: #6f7685;
+  flex-basis: 66.66%;
+  max-width: 519px;
+}
+
+.main__items-wrapper > :nth-child(4) .main__item-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__items-wrapper > :nth-child(4) .main__item-title {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  max-width: 262px;
+}
+
+.main__items-wrapper > :nth-child(4) .main__item-text {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.main__items-wrapper > :nth-child(4) .main__item-img {
+  padding-right: 53px;
+  padding-top: 8px;
+}
+
+.main__items-wrapper > :nth-child(5) {
+  background: #1f1f1f;
+  flex-basis: 100%;
+  margin-right: 0;
+  height: 120px;
+}
+
+.main__items-wrapper > :nth-child(5) .main__item-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.main__items-wrapper > :nth-child(5) .main__item-title {
+  color: #fff;
+  flex-basis: 100%;
+  margin-left: 29px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  max-width: 468px;
+}
+
+.main__items-wrapper > :nth-child(n + 3) {
+  margin-top: 24px;
+}
